@@ -61,6 +61,7 @@ a {
 .nav-button {
   font-size: 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid #7209b7;
 }
 
 /* .bar {
@@ -98,21 +99,20 @@ a {
   opacity: 0.8;
 }
 .hero-logo-cont {
-  width: 160px;
-  height: 160px;
-  /* background-color: rgba(255, 147, 10, 0.8); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  background-color: rgba(36, 0, 70, 0.4);
   /* background-color: #FFF; */
   border-radius: 50%;
   padding: 20px 20px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .hero-logo {
-  width: 140px;
+  width: 160px;
   position: relative;
-
 }
 
 .hero-text {
@@ -125,10 +125,15 @@ a {
   font-family: 'Fjalla One', sans-serif;
   padding: 4px;
   border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: rgba(0, 0, 0, 0.2);
   margin-top: 100px;
   display: inline;
+  -webkit-filter: drop-shadow(1px 1px 0 black)
+  drop-shadow(-1px -1px 0 black);
+  filter: drop-shadow(1px 1px 0 black) 
+  drop-shadow(-1px -1px 0 black);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  letter-spacing: 1px;
 }
 .hero-buttons {
   position: relative;
