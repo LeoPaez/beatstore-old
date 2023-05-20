@@ -5,7 +5,7 @@
 
 body {
   background-color: #10002b;
-  font-family: 'Noto Sans Thai', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 a {
@@ -73,7 +73,7 @@ a {
 
 .nav-items {
   display: flex;
-  gap: 60px;
+  gap: 100px;
 }
 
 .nav-links {
