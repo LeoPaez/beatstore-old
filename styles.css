@@ -41,9 +41,7 @@ a {
 .header::before {
   background-image: url("/assets/img/estudio2.jpg");
   background-size: cover;
-  /* background-attachment: local; */
   background-repeat: no-repeat;
-  /* background-position: 50% 100%; */
   background-position-y: top;
   background-position-x: center;
   content: "";
@@ -57,7 +55,6 @@ a {
 }
 
 .navbar {
-  /* background-color: #10002B; */
   background-color: transparent;
   height: 100px;
   display: flex;
@@ -102,7 +99,58 @@ a {
 
 .hero {
   width: 100%;
-  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+  margin-left: 300px;
+}
+
+.buscador-contenedor {
+  display: flex;
+  background-color: #FFF;
+  width: 600px;
+  height: 70px;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.buscador {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.buscador-icono {
+  /* background-color: #FFF; */
+  width: 40px;
+  height: 40px;
+}
+.buscador-input {
+  border: none;
+  font-size: 22px;
+}
+.buscador-input:focus {
+  outline: none;
+}
+.buscador-select {
+  border: none;
+}
+.buscador-select {
+  outline: none;
+  border-left: 1px solid grey;
+  padding: 3px 0 3px 8px;
+  font-size: 20px;
+  width: 90px;
+}
+.buscador-option {
+
+}
+.buscador-option:hover {
+
+}
+select.decorated option:hover {
+  background-color: pink;
 }
 
 .black {
