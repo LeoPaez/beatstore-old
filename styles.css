@@ -66,7 +66,7 @@ a {
 }
 
 .logo-img {
-  width: 70px;
+  width: 66px;
 }
 
 .nav-items {
@@ -135,7 +135,6 @@ a {
   gap: 20px;
 }
 .searchbar-icon {
-  /* background-color: #FFF; */
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -163,13 +162,12 @@ a {
   color: #FFF;
   gap: 20px;
   font-size: 24px;
-  /* font-weight: 700; */
   align-items: center;
   margin-top: -6px;
 }
 .trend {
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 5px 24px;
+  padding: 5px 14px;
   border-radius: 30px;
   font-weight: 400;
   font-size: 20px;
@@ -186,13 +184,12 @@ a {
 .hero-button {
   background-color: #B5179E;
   padding: 14px 50px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 .hero-button:hover {
-  background-color: #B5179E;
-  opacity: 0.9;
+  background-color: #a514a5;
 }
 
 .black {
@@ -220,18 +217,14 @@ a {
   .trend {
     font-size: 18px;
   }
-  .hero-button {
-    background-color: #B5179E;
-    padding: 12px 46px;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
 }
 @media (max-width: 1500px){
   .navbar {
     padding: 0 140px;
   }
+  .logo-img {
+    width: 60px;
+  }  
   .nav-items {
     display: flex;
     gap: 70px;
@@ -240,17 +233,34 @@ a {
     font-size: 17px;
     color: #f8f9fa;
   }
+  .nav-button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
   .hero {
     margin-left: 140px;
   }
   .hero-title {
-    font-size: 42px;
+    font-size: 40px;
+  }
+  .searchbar-container {
+    height: 68px;
+  }
+  .trends {
+    font-size: 20px;
+    gap: 18px;
+  }
+  .trend {
+    font-size: 17px;
   }
 }
 @media (max-width: 1300px){
   .navbar {
     padding: 0 90px;
   }
+  .logo-img {
+    width: 56px;
+  }  
   .nav-items {
     display: flex;
     gap: 60px;
@@ -258,8 +268,12 @@ a {
   .nav-links {
     gap: 30px;
   }
+  .nav-link {
+    font-size: 16px;
+  }
   .hero {
     margin-left: 90px;
+    gap: 26px;
   }
   .hero-title {
     font-size: 38px;
@@ -272,11 +286,11 @@ a {
     width: 34px;
     height: 34px;
   }
-  .trends {
+  /* .trends {
     font-size: 20px;
     gap: 18px;
   }
   .trend {
     font-size: 17px;
-  }
+  } */
 }
