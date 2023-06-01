@@ -189,7 +189,7 @@ a {
 }
 
 .black {
-  height: 100vh;
+  height: 200vh;
   background-color: #000;
 }
 
@@ -278,4 +278,154 @@ a {
   .trends {
     font-size: 18px;
   }
+}
+
+.catalogue-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 190px;
+}
+.catalogue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  padding: 0 240px;
+  position: relative;
+  gap: 40px;
+}
+.cat-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cat-navigation {
+  display: flex;
+  gap: 10px;
+}
+.cat-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #FFF;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+.cat-button:first-of-type {
+  opacity: 0.4;
+}
+.cat-button__img {
+  width: 16px;
+}
+.genres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.genre {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.genre-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  background-color: #000;
+  position: relative;
+}
+.genres div:nth-of-type(1) .genre-img::before {
+  background-image: url("./assets/img/genre-img-1.jpg");
+}
+.genres div:nth-of-type(2) .genre-img::before {
+  background-image: url("./assets/img/genre-img-2.jpg");
+}
+.genres div:nth-of-type(3) .genre-img::before {
+  background-image: url("./assets/img/genre-img-3.jpg");
+}
+.genres div:nth-of-type(4) .genre-img::before {
+  background-image: url("./assets/img/genre-img-4.jpg");
+}
+.genres div:nth-of-type(5) .genre-img::before {
+  background-image: url("./assets/img/genre-img-5.jpg");
+}
+
+.genre-img::before {
+  background-position: center;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.genre-img:hover::before {
+  opacity: 0.6;
+}
+.genre-name {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+.upper {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.upper:last-of-type {
+  font-size: 30px;
+}
+
+
+.type-artist-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.type-artist-img:hover {
+  opacity: 0.8;
+}
+.type-quantity {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+.type-quantity span {
+  color: #FFF;
+}
+.type-name {
+  text-align: center;
+  font-size: 21px;
+}
+
+
+.beat-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+.beat-img:hover {
+  opacity: 0.8;
+}
+.beat-user {
+  color: #aaaaaa;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: -6px;
+}
+.beat-bpm {
+  font-size: 14px;
 }
